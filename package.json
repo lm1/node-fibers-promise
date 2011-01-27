@@ -1,0 +1,13 @@
+{
+  "name": "fibers-promise",
+  "description": "Simple promises for use with fibers.",
+  "version": "0.0.1",
+  "author": "Lukasz Mielicki <mielicki@gmail.com>",
+  "main": "fibers-promise",
+  "engines": {
+    "node": ">=0.3.6"
+  },
+  "dependencies" : {
+    "fibers": ">=0.1.0"
+  }
+}
