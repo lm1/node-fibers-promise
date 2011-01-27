@@ -96,11 +96,10 @@ This type of promise is useful when passed as callback to most node asynchronous
 ### promise.start(f, [args...])
 
 `start` runs `f` in a new fiber and passes `args` to `f`.
-Returns the value returned by `f`.
 
 ### promise.task(f)
 
-Returns a function which will execute `f` in new fiber upon invocation. All the arguments of the returned function are passed directly to `f`. Useful to postpone start of a fiber, or wrap a callback in a fiber.
+Returns a function which will execute `f` in new fiber upon invocation. All the arguments of the returned function are passed directly to `f`. Useful to postpone start of a fiber, or wrap a callback with a fiber.
 
 ### promise.waitAny(...)
 
