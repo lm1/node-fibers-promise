@@ -1,6 +1,6 @@
 # Intoruction
 
-`fibers-promises` is a small yet powerful library based on [fibers](https://github.com/laverdet/node-fibers).
+`fibers-promise` is a small yet powerful library based on [fibers](https://github.com/laverdet/node-fibers).
 
 A promise is just a value container with build-in synchronisation mechanism. Promises allow you to get rid of callbacks clutter.
 
