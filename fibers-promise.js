@@ -68,6 +68,7 @@ function promise() {
     if (cb.__throw) {
       var err;
       if (multiple) {
+        multiple = false;
         err = val.shift();
         if (val.length <= 1) {
           val = val[0];
