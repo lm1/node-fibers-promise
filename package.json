@@ -1,7 +1,7 @@
 {
   "name": "fibers-promise",
   "description": "Simple promises for use with fibers.",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "author": "Lukasz Mielicki <mielicki@gmail.com>",
   "main": "fibers-promise",
   "engines": {

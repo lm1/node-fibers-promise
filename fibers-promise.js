@@ -100,8 +100,9 @@ promise.start = function(f) {
 
 promise.task = function(f) {
   return function() {
+    var self = this;
     Fiber(function(args) {
-      f.apply(undefined, args);
+      f.apply(self, args);
     }).run(arguments);
   };
   return undefined;
