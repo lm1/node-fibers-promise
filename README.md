@@ -1,4 +1,4 @@
-# Intoruction
+# Introduction
 
 `fibers-promise` is a small yet powerful library based on [fibers](https://github.com/laverdet/node-fibers).
 
