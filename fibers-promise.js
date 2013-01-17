@@ -20,7 +20,7 @@
   IN THE SOFTWARE.
 */
 
-require('fibers');
+var Fiber = require('fibers');
 
 function get_current_fiber() {
   var f = Fiber.current;
@@ -53,7 +53,7 @@ function promise() {
   };
   cb.wait = function() {
     while (!hasValue) {
-      yield();
+      Fiber.yield();
     }
     return true;
   };
@@ -115,7 +115,7 @@ promise.waitAny = function() {
         return arguments[i];
       }
     }
-    yield();
+    Fiber.yield();
   }
 }
 
@@ -134,7 +134,7 @@ promise.sleep = function(ms) {
     fiber.run();
   }, ms);
   while (!wake) {
-    yield();
+    Fiber.yield();
   }
   return undefined;
 };
