@@ -81,6 +81,11 @@ function promise() {
     }
     return val;
   };
+  cb.invoke = function(func) {
+    var args = Array.prototype.slice.call(arguments, 1);
+    args.push(cb);
+    return cb.get();
+  };
   return cb;
 }
 module.exports = promise;
